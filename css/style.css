@@ -45,7 +45,7 @@ form > input {
   height: 50px;
 }
 
-button {
+.button {
   height: 50px;
   width: 94px;
   background-color: black;
@@ -66,9 +66,10 @@ button {
     height: 5vh;
     border-radius: 15px;
   }
-  button {
+  .button {
     height: 5vh;
     border-radius: 15px;
+    font-size: 26px;
   }
 }
 
@@ -96,13 +97,19 @@ button {
   .data {
     display: flex;
     flex-direction: row;
-    top: 30%;
+    top: 25%;
     border-radius: 15px;
   }
   .data div {
     padding: 4vh;
-    border-right: 0.5px solid grey;
+    /* border-right: 0.5px solid grey; */
     width: 25%;
+    color: grey;
+    font-size: 12px;
+  }
+  .meta-data {
+    height: 80%;
+    border-right: 0.5px solid grey;
   }
 }
 
