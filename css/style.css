@@ -36,6 +36,22 @@ form {
   border-radius: 9px;
 }
 
+.active {
+  color: red;
+  background-color: #e5c1c163;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  border-radius: 50%;
+  font-size: 12px;
+  line-height: 25px !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
 form > input {
   width: 100%;
   background: none;
@@ -87,6 +103,7 @@ form > input {
   left: 10%;
   top: 25%;
   background-color: white;
+  z-index: 1000;
 }
 
 .data div {
@@ -97,23 +114,32 @@ form > input {
   .data {
     display: flex;
     flex-direction: row;
-    top: 25%;
+    top: 27.5%;
     border-radius: 15px;
   }
-  .data div {
-    padding: 4vh;
+  .data > div {
+    /* padding: 4vh; */
     /* border-right: 0.5px solid grey; */
     width: 25%;
     color: grey;
     font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.5px solid grey;
   }
   .meta-data {
     height: 80%;
+    padding: 5px;
+    /* border-right: 0.5px solid grey; */
+    text-align: center;
+  }
+  .meta-data::before {
     border-right: 0.5px solid grey;
   }
 }
 
-.map {
+#map {
   height: 62.5vh;
-  background-color: tomato;
 }
