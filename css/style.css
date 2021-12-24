@@ -63,7 +63,7 @@ form > input {
 
 .button {
   height: 50px;
-  width: 94px;
+  width: 70px;
   background-color: black;
   color: #ffffff;
   text-transform: uppercase;
@@ -74,17 +74,17 @@ form > input {
   font-size: 40px;
   font-weight: 400;
   text-align: center;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 @media (min-width: 1024px) {
   form {
     width: 40%;
     height: 5vh;
-    border-radius: 15px;
   }
   .button {
     height: 5vh;
-    border-radius: 15px;
     font-size: 26px;
   }
 }
@@ -134,6 +134,9 @@ form > input {
     padding: 5px;
     /* border-right: 0.5px solid grey; */
     text-align: center;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
   }
   .meta-data::before {
     border-right: 0.5px solid grey;
@@ -141,5 +144,5 @@ form > input {
 }
 
 #map {
-  height: 62.5vh;
+  height: 65vh;
 }
